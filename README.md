@@ -1,6 +1,6 @@
 # ICU Mortality Prediction Using Machine Learning
 
-**Effat University · Computer Science · 2026**  
+**Effat University Â· Computer Science Â· 2026**  
 Python, pandas, scikit-learn, XGBoost, Jupyter Notebook
 
 A team project exploring mortality-risk classification using structured ICU records. We compared supervised learning models, investigated class imbalance and label noise, and examined how classification thresholds affect the detection of mortality cases.
@@ -38,7 +38,7 @@ See the [notebook](notebook/ML_Final_Project_Code.ipynb) for the different exper
 3. Download the [ICU Patient Monitoring and Mortality Prediction dataset](https://www.kaggle.com/datasets/jayjoshi37/icu-patient-monitoring-and-mortality-prediction).
 4. Open [ML_Final_Project_Code.ipynb](notebook/ML_Final_Project_Code.ipynb) with Jupyter Notebook or Google Colab. Follow the notebook's data-loading instructions and select the relevant experiment.
 
-The notebook includes multiple experimental versions; a clean end-to-end reproduction of every reported result has not yet been verified.
+The notebook contains multiple experimental versions and has not been independently verified as a complete reproduction of every reported result.
 
 ## Related conference paper
 
@@ -51,7 +51,7 @@ The paper was presented at the conference by video. AICCSA states that accepted 
 
 ## Team
 
-**Sarah Elshiaty · Mashael Saeed · Seifeldin Elshiaty**
+**Sarah Elshiaty Â· Mashael Saeed Â· Seifeldin Elshiaty**
 
 This was a collaborative academic project. The [original shared repository](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML) retains the original development commits, including contributions recorded under Sarah's and Mashael's names. See [Contributors](CONTRIBUTORS.md).
 
