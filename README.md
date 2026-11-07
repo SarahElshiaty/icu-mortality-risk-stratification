@@ -32,13 +32,13 @@ The reported tuned XGBoost model at **threshold 0.35** was evaluated on a **bala
 | Material | Open |
 |---|---|
 | Analysis and experiments | [Jupyter notebook](notebook/ML_Final_Project_Code.ipynb) |
-| Dataset and source | [Dataset folder](data/) · [original Kaggle source](https://www.kaggle.com/datasets/jayjoshi37/icu-patient-monitoring-and-mortality-prediction) |
-| Evaluation charts | [Images](images/) |
-| Research manuscript | [Paper](paper/) |
-| Poster and slides | [Poster](poster/) · [Presentation](presentation/) |
-| Recorded interface demo | [Prototype](prototype/) |
+| Dataset and source | [Original dataset CSV](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML/blob/main/data/ICU_Patient_Monitoring_Mortality_Prediction_15000.csv) · [Kaggle source](https://www.kaggle.com/datasets/jayjoshi37/icu-patient-monitoring-and-mortality-prediction) |
+| Evaluation charts | [Local charts](images/) · [Full original figures](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML/tree/main/images) |
+| Research manuscript | [Original manuscript PDF](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML/blob/main/paper/ICU_Mortality_Paper.pdf) (verify version against accepted submission) |
+| Poster and slides | [Original poster](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML/tree/main/poster) · [Original slides](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML/tree/main/presentation) |
+| Recorded interface demo | [Original video](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML/blob/main/prototype/interface_video.MOV) · [Demo link](prototype/README.md) |
 | Team contribution details | [Contributors](CONTRIBUTORS.md) |
-| Reproduction and limitations | [Reproducibility notes](REPRODUCIBILITY.md) |
+| Reproduction and limitations | [Reproducibility notes](REPRODUCIBILITY.md) · [Large asset links](ASSET_SOURCES.md) |
 
 ## Run the notebook
 
@@ -47,7 +47,7 @@ The deliverable is a research **Jupyter/Colab notebook**, not a production-ready
 1. Download or clone this repository.
 2. Install Python 3, then run `python -m pip install -r requirements.txt`.
 3. Open `notebook/ML_Final_Project_Code.ipynb` in Jupyter or Google Colab.
-4. Follow its data-loading cells. If prompted to upload data, supply `data/ICU_Patient_Monitoring_Mortality_Prediction_15000.csv`.
+4. Download the source dataset from the [original team's CSV](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML/blob/main/data/ICU_Patient_Monitoring_Mortality_Prediction_15000.csv) or Kaggle. If prompted, upload it to the notebook; the large CSV is linked rather than duplicated here.
 5. Run the desired experiment and read its outputs. The notebook includes exploratory stages; **not every stage corresponds to the accepted manuscript's final experiment**.
 
 A clean, end-to-end reproduction of the final manuscript results has **not** been independently verified for this repository. We do not present these figures as a passing automated test.
@@ -61,6 +61,10 @@ This work was developed collaboratively by **Sarah Elshiaty, Mashael Saeed, and 
 - [Original Git commit history](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML/commits/main)
 
 The original commit log includes changes authored under **Sarah Elshiaty** and **Mashael Saeed**. This standalone repository preserves source-file credit and links to that history; its own commits for copying/organizing the files **must not be interpreted as the complete original development history**. See [CONTRIBUTORS.md](CONTRIBUTORS.md).
+
+## Source completeness
+
+The executable notebook, dependency list, and several charts are included locally. The source dataset, large reports, full-size workflow image, and video are **linked to the original team repository** because the GitHub connection could not transfer those larger files; no empty placeholders were published. See [Asset sources](ASSET_SOURCES.md). This independent copy does **not** reproduce the original commit graph; use the [original team's history](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML/commits/main) to verify development contributions.
 
 ## Responsible use and licensing
 
