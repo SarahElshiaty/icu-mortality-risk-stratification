@@ -1,58 +1,58 @@
 # ICU Mortality Prediction Using Machine Learning
 
-**Effat University | Computer Science | 2026**  
-Python · scikit-learn · XGBoost · Data analysis
+**Effat University · Computer Science · 2026**  
+Python, pandas, scikit-learn, XGBoost, Jupyter Notebook
 
-A collaborative university project examining ICU mortality classification using structured patient data. We compared eight machine-learning classifiers, studied class imbalance and noisy labels, and evaluated the effect of adjusting prediction thresholds.
+A team project exploring mortality-risk classification using structured ICU records. We compared supervised learning models, investigated class imbalance and label noise, and examined how classification thresholds affect the detection of mortality cases.
 
-## Project overview
+## Project highlights
 
-- **Dataset:** 15,000 ICU records with 24 variables, drawn from a [public Kaggle dataset](https://www.kaggle.com/datasets/jayjoshi37/icu-patient-monitoring-and-mortality-prediction).
-- **Methods:** exploratory analysis, preprocessing, feature selection, class-imbalance handling, model comparison, threshold tuning, and robustness experiments.
-- **Models:** Logistic Regression, Decision Tree, Random Forest, SVM, KNN, Naive Bayes, Gradient Boosting, and XGBoost.
-- **Selected features:** ventilation requirement, vasopressor use, sepsis status, APACHE score, SOFA score, comorbidity score, and age.
+- Worked with a public dataset of **15,000 ICU records** and 24 initial variables.
+- Compared **eight classifiers**, including Logistic Regression, Random Forest, SVM, and XGBoost.
+- Explored data preprocessing, feature selection, class balancing, model evaluation, and robustness under noisy labels.
+- Focused the final analysis on seven predictors: ventilation requirement, vasopressor use, sepsis status, APACHE and SOFA scores, comorbidity score, and age.
 
-### Results
+### Model evaluation
 
-One evaluation of tuned XGBoost (threshold **0.35**) reported **88.5% recall**, **67.8% F1**, and **0.641 ROC-AUC** on a balanced evaluation set. These results are specific to that experiment; the notebook contains additional experiments and settings. See [evaluation notes](REPRODUCIBILITY.md).
+For one balanced evaluation experiment, tuned XGBoost at a **0.35 threshold** reached **88.5% recall**, **67.8% F1-score**, and **0.641 ROC-AUC**. The higher recall came with more false positives. These are experimental results, not measures of clinical performance.
 
-![Model comparison figure](images/confusion_matrix.png)
+![Tuned XGBoost confusion matrix](images/confusion_matrix.png)
 
-## Research
+See the [notebook](notebook/ML_Final_Project_Code.ipynb) for the different experiments and [evaluation notes](REPRODUCIBILITY.md) for important methodological qualifications.
 
-The team also prepared a **separate Data Science research manuscript** based on the same underlying ICU mortality topic:
+## Project files
 
-**[ICU Mortality Prediction Using Machine Learning: A Practical Framework for Risk Stratification](https://aiccsa.net/AICCSA2026/papers.php)**  
-Sarah Elshiaty, Mashael Saeed, Seifeldin Elshiaty, and Passent Elkafrawy.  
-**Accepted at ACS/IEEE AICCSA 2026**, AICities track, paper #2302. The team delivered the conference presentation by video.
-
-The conference manuscript and the Machine Learning course project are related but **not interchangeable versions of the same report**. The conference acceptance is verified; IEEE Xplore publication is not claimed.
-
-## Files
-
-| File | Contents |
+| Resource | Description |
 | --- | --- |
-| [notebook/](notebook/) | ML experiments and evaluation code |
-| [images/](images/) | Class distribution, confusion matrix, feature importance, ROC curve |
-| [requirements.txt](requirements.txt) | Main Python dependencies |
-| [data/](data/) | Dataset information and download source |
-| [prototype/](prototype/) | Interface demonstration link |
-| [ASSET_SOURCES.md](ASSET_SOURCES.md) | Original project documents and larger media |
+| [Machine Learning notebook](notebook/ML_Final_Project_Code.ipynb) | Data exploration, model training, threshold experiments, and evaluation |
+| [Figures](images/) | Class distribution, ROC curve, confusion matrix, and feature importance |
+| [Python requirements](requirements.txt) | Main packages used in the notebook |
+| [Dataset](data/) | Source and download instructions |
+| [Prototype demonstration](prototype/) | Recorded interface demonstration |
+| [Additional project files](ASSET_SOURCES.md) | Original reports, slides, poster, and video |
 
-## Running the project
+## Getting started
 
-1. Clone this repository and install Python 3.
-2. Run `python -m pip install -r requirements.txt`.
-3. Download the [ICU dataset](https://www.kaggle.com/datasets/jayjoshi37/icu-patient-monitoring-and-mortality-prediction).
-4. Open [ML_Final_Project_Code.ipynb](notebook/ML_Final_Project_Code.ipynb) in Jupyter or Google Colab and follow its data-loading cells.
+1. Clone or download this repository.
+2. Install the required packages: `python -m pip install -r requirements.txt`.
+3. Download the [ICU Patient Monitoring and Mortality Prediction dataset](https://www.kaggle.com/datasets/jayjoshi37/icu-patient-monitoring-and-mortality-prediction).
+4. Open [ML_Final_Project_Code.ipynb](notebook/ML_Final_Project_Code.ipynb) with Jupyter Notebook or Google Colab. Follow the notebook's data-loading instructions and select the relevant experiment.
 
-The notebook contains multiple experiments and has not been independently validated as a single-command reproduction of the conference paper.
+The notebook includes multiple experimental versions; a clean end-to-end reproduction of every reported result has not yet been verified.
 
-## Contributors
+## Related conference paper
 
-**Sarah Elshiaty · Mashael Saeed · Seifeldin Elshiaty**  
-Conference manuscript co-author: **Passent Elkafrawy**
+A **separate Data Science manuscript** developed from the same research topic was accepted to **AICities at the 23rd ACS/IEEE International Conference on Computer Systems and Applications (AICCSA 2026)**, paper **#2302**:
 
-This project was developed as a team. The [original team repository](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML) retains the development history; [Sarah's fork](https://github.com/SarahElshiaty/ICU-Mortality-Prediction-ML) is also retained. See [contributors and attribution](CONTRIBUTORS.md).
+[*ICU Mortality Prediction Using Machine Learning: A Practical Framework for Risk Stratification*](https://aiccsa.net/AICCSA2026/papers.php)  
+**Sarah Elshiaty, Mashael Saeed, Seifeldin Elshiaty, and Passent Elkafrawy.**
 
-**Note:** Academic research only. Not a clinically validated medical prediction system.
+The paper was presented at the conference by video. AICCSA states that accepted and presented papers are submitted for consideration for IEEE Xplore publication, subject to final publication requirements. **An individual IEEE Xplore record has not yet been verified.** The [Data Science project repository](https://github.com/SarahElshiaty/ICU-Mortality-Data-Science) contains the related Data Science materials; the notebook here belongs to the Machine Learning course project.
+
+## Team
+
+**Sarah Elshiaty · Mashael Saeed · Seifeldin Elshiaty**
+
+This was a collaborative academic project. The [original shared repository](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML) retains the original development commits, including contributions recorded under Sarah's and Mashael's names. See [Contributors](CONTRIBUTORS.md).
+
+*Academic research only. This model has not been externally or clinically validated and is not intended for medical decision-making.*
