@@ -1,28 +1,25 @@
-## Visualizations
+# Visualizations
 
-The project notebook contains additional exploratory and evaluation plots. The figures below present the most significant visualizations used to summarize model performance, interpretability, and data characteristics.
+These figures were copied from the original collaborative project. The research notebook contains additional exploratory and evaluation plots.
 
-### Class Distribution
-Shows the original class imbalance before balancing.
+### Class distribution
 
-![Class Distribution](Class_Distribution.png)
+![Original class distribution](Class_Distribution.png)
 
-### Methodology Workflow
-Illustrates the full machine learning pipeline used in the project.
+### ROC curve
 
-![Methodology Workflow](Methodology_Workflow.png)
+![ROC curve](roc_curve.png)
 
-### ROC Curve
-Compares discrimination performance across evaluated models.
+### Confusion matrix
 
-![ROC Curve](roc_curve.png)
+![Confusion matrix](confusion_matrix.png)
 
-### Confusion Matrix
-Shows final Tuned XGBoost performance at threshold 0.35.
+### Feature importance
 
-![Confusion Matrix](confusion_matrix.png)
+![Feature importance](feature_importance.png)
 
-### Feature Importance
-Displays the strongest predictors influencing mortality prediction.
+### Methodology workflow
 
-![Feature Importance](feature_importance.png)
+The larger workflow image remains available in the [original team's repository](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML/blob/main/images/Methodology_Workflow.png).
+
+Interpret the evaluation figures in light of the [manuscript's study design and limitations](../REPRODUCIBILITY.md).
