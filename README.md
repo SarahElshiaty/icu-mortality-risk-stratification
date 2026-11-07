@@ -1,6 +1,6 @@
 # ICU Mortality Prediction Using Machine Learning
 
-**Effat University Â· Computer Science Â· 2026**  
+**Effat University · Computer Science · 2026**  
 Python, pandas, scikit-learn, XGBoost, Jupyter Notebook
 
 A team project exploring mortality-risk classification using structured ICU records. We compared supervised learning models, investigated class imbalance and label noise, and examined how classification thresholds affect the detection of mortality cases.
@@ -51,7 +51,7 @@ The paper was presented at the conference by video. AICCSA states that accepted 
 
 ## Team
 
-**Sarah Elshiaty Â· Mashael Saeed Â· Seifeldin Elshiaty**
+**Sarah Elshiaty · Mashael Saeed · Seifeldin Elshiaty**
 
 This was a collaborative academic project. The [original shared repository](https://github.com/M1sh13l/ICU-Mortality-Prediction-ML) retains the original development commits, including contributions recorded under Sarah's and Mashael's names. See [Contributors](CONTRIBUTORS.md).
 
